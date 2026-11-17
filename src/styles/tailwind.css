@@ -1,0 +1,24 @@
+/* Tailwind v4: deliberately omit Preflight to preserve the original reset. */
+@import "tailwindcss/theme" layer(theme);
+@import "./tokens.css";
+@import "./components.css";
+/* Legacy visual rules are layered below Tailwind utilities. This lets migrated JSX utilities take precedence while retaining pixel-critical effects during the staged migration. */
+@import "../../legacy/style.css" layer(components);
+@import "tailwindcss/utilities" layer(utilities);
+
+@theme inline {
+  --color-brand-cream: var(--cream);
+  --color-brand-green: var(--green);
+  --color-brand-green-soft: var(--green-soft);
+  --color-brand-green-dark: var(--dark-green);
+  --color-brand-gold: var(--gold);
+  --color-brand-gold-light: var(--light-gold);
+  --color-brand-gold-pale: var(--pale-gold);
+  --color-content: var(--text);
+  --color-content-muted: var(--muted);
+  --color-surface: var(--white);
+  --color-border: var(--border);
+  --color-danger: var(--error);
+  --color-success: var(--success);
+  --font-vazirmatn: "Vazirmatn", Tahoma, "Segoe UI", system-ui, sans-serif;
+}

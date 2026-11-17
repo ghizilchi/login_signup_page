@@ -1,0 +1,40 @@
+/* Single source of truth for the original Ghizilchi visual system.
+   Values are copied exactly from the original stylesheet. */
+:root {
+  --cream: #f7f3e8;
+  --green: #075b4a;
+  --green-soft: #0b6b58;
+  --dark-green: #03483b;
+  --gold: #c89b3c;
+  --light-gold: #e2c56b;
+  --pale-gold: #f3df9b;
+  --text: #18342e;
+  --muted: #6b7c76;
+  --white: #ffffff;
+  --border: #e3e8e5;
+  --error: #c94b4b;
+  --success: #23865f;
+  --shadow-soft: 0 25px 70px rgba(3, 72, 59, 0.10);
+  --ease: cubic-bezier(.22, 1, .36, 1);
+
+  /* Shared motion tokens: exact timings retained from the original UI. */
+  --motion-field: border-color .3s ease, box-shadow .3s ease, background .3s ease, transform .3s var(--ease);
+  --motion-button: transform .35s var(--ease), box-shadow .35s ease, background-position .5s ease;
+  --motion-secondary-button: transform .3s var(--ease), background .3s ease, box-shadow .3s ease, border-color .3s ease;
+  --motion-button-arrow: transform .35s var(--ease);
+  --motion-button-shine: right .8s ease;
+  --motion-back-button: color .25s ease, transform .3s var(--ease);
+
+  /* Semantic aliases used by reusable components. */
+  --color-brand: var(--green);
+  --color-brand-soft: var(--green-soft);
+  --color-brand-dark: var(--dark-green);
+  --color-accent: var(--gold);
+  --color-accent-light: var(--light-gold);
+  --color-content: var(--text);
+  --color-content-muted: var(--muted);
+  --color-surface: var(--white);
+  --color-border: var(--border);
+  --color-danger: var(--error);
+  --color-success: var(--success);
+}

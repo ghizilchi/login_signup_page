@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>عضویت در قیزیلچی</title>
+
+    <!-- Font: Vazirmatn is loaded locally from fonts/ (see style/style.css) -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<main class="signup-page">
+
+    <!-- =========================
+         AMBIENT BACKGROUND
+    ========================== -->
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <div class="ambient-grid"></div>
+
+    <div class="floating-particle particle-one"></div>
+    <div class="floating-particle particle-two"></div>
+    <div class="floating-particle particle-three"></div>
+    <div class="floating-particle particle-four"></div>
+
+
+    <!-- =========================
+         BRAND
+    ========================== -->
+
+    <header class="brand">
+
+        <div class="brand-mark">
+            ✦
+        </div>
+
+        <div class="brand-name">
+            <span>قیزیلچی</span>
+            <small>GHIZILCHI ERP</small>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+    <section class="signup-container">
+
+
+        <!-- =========================
+             GEM SECTION
+        ========================== -->
+
+        <div class="gem-section">
+
+            <div class="gem-noise"></div>
+
+            <div class="gem-orbit orbit-one"></div>
+            <div class="gem-orbit orbit-two"></div>
+
+            <div class="gem-aura"></div>
+
+            <div class="gem-light light-one"></div>
+            <div class="gem-light light-two"></div>
+
+            <div class="gem-wrapper">
+
+                <div class="gem-glow"></div>
+
+                <img
+                    id="gemImage"
+                    src="images/broken-gem.png"
+                    alt="الماس قیزیلچی"
+                >
+
+            </div>
+
+
+            <div class="gem-caption">
+
+                <span class="caption-line"></span>
+
+                <span id="gemCaption">
+                    شروع یک مسیر تازه
+                </span>
+
+                <span class="caption-line"></span>
+
+            </div>
+
+
+
+            <div class="gem-progress">
+
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+
+            </div>
+
+            <!-- SIGN UP / LOGIN SWITCH -->
+            <div class="auth-switch" role="group" aria-label="انتخاب نوع دسترسی">
+                <button type="button" class="auth-switch-button active" data-auth-mode="signup" aria-pressed="true">
+                    <span class="auth-switch-icon" aria-hidden="true">✦</span>
+                    <span>ثبت‌نام</span>
+                    <span class="auth-switch-glint" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="auth-switch-button" data-auth-mode="login" aria-pressed="false">
+                    <span class="auth-switch-icon" aria-hidden="true">↗</span>
+                    <span>ورود</span>
+                    <span class="auth-switch-glint" aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </div>
+        
+
+
+        <!-- =========================
+             FORM SECTION
+        ========================== -->
+
+        <div class="form-section">
+
+
+            <!-- =========================
+                 STEPPER
+            ========================== -->
+
+            <div class="stepper">
+
+                <div class="step active" data-step="1">
+
+                    <div class="step-number">
+                        ۱
+                    </div>
+
+                    <span>
+                        اطلاعات شخصی
+                    </span>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step" data-step="2">
+
+                    <div class="step-number">
+                        ۲
+                    </div>
+
+                    <span>
+                        اطلاعات تماس
+                    </span>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step" data-step="3">
+
+                    <div class="step-number">
+                        ۳
+                    </div>
+
+                    <span>
+                        تکمیل ثبت‌نام
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 FORM
+            ========================== -->
+
+            <form id="signupForm" novalidate>
+
+
+                <!-- =========================
+                     STEP 1
+                ========================== -->
+
+                <div
+                    class="form-step active"
+                    data-form-step="1"
+                >
+
+                    <div class="step-heading">
+
+                        <span class="eyebrow">
+                            مرحله اول
+                        </span>
+
+                        <h1>
+                            اطلاعات شخصی
+                        </h1>
+
+                        <p>
+                            برای شروع، مشخصات خودت رو وارد کن.
+                        </p>
+
+                    </div>
+
+
+                    <div class="input-grid">
+
+
+                        <!-- FIRST NAME -->
+
+                        <div class="input-group">
+
+                            <label for="firstName">
+                                نام
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="نام خود را وارد کنید"
+                                    autocomplete="given-name"
+                                >
+
+                                <span class="input-state-icon"></span>
+
+                            </div>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+                        <!-- LAST NAME -->
+
+                        <div class="input-group">
+
+                            <label for="lastName">
+                                نام خانوادگی
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="نام خانوادگی خود را وارد کنید"
+                                    autocomplete="family-name"
+                                >
+
+                                <span class="input-state-icon"></span>
+
+                            </div>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NATIONAL ID -->
+
+                    <div class="input-group">
+
+                        <label for="nationalId">
+                            کد ملی
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="text"
+                                id="nationalId"
+                                name="nationalId"
+                                inputmode="numeric"
+                                maxlength="10"
+                                placeholder="کد ملی ۱۰ رقمی"
+                            >
+
+                            <span class="input-state-icon"></span>
+
+                        </div>
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-button next-button"
+                        data-next="2"
+                    >
+
+                        <span>
+                            ادامه
+                        </span>
+
+                        <span class="button-arrow">
+                            ←
+                        </span>
+
+                        <span class="button-shine"></span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     STEP 2
+                ========================== -->
+
+                <div
+                    class="form-step"
+                    data-form-step="2"
+                >
+
+                    <div class="step-heading">
+
+                        <span class="eyebrow">
+                            مرحله دوم
+                        </span>
+
+                        <h1>
+                            اطلاعات تماس
+                        </h1>
+
+                        <p>
+                            راه ارتباطی خودت رو وارد کن تا حساب کاربری‌ات تأیید بشه.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MOBILE (swaps to verification code after sending) -->
+
+                    <div class="input-group swap-group" id="phoneGroup">
+
+                        <label for="mobile">
+                            شماره موبایل
+                        </label>
+
+                        <div class="input-with-button">
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="tel"
+                                    id="mobile"
+                                    name="mobile"
+                                    inputmode="numeric"
+                                    maxlength="11"
+                                    placeholder="مثلاً ۰۹۱۲۱۲۳۴۵۶۷"
+                                    autocomplete="tel"
+                                >
+
+                                <span class="input-state-icon"></span>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                id="sendCodeButton"
+                                class="secondary-button"
+                            >
+                                <span class="send-text">
+                                    ارسال کد
+                                </span>
+
+                                <span class="send-loader"></span>
+
+                            </button>
+
+                        </div>
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <!-- VERIFICATION CODE (shown in place of the mobile field) -->
+
+                    <div class="input-group swap-group" id="codeGroup" hidden>
+
+                        <label for="verificationCode">
+                            کد تأیید
+                        </label>
+
+                        <div class="input-wrapper verification-wrapper">
+
+                            <input
+                                type="text"
+                                id="verificationCode"
+                                name="verificationCode"
+                                inputmode="numeric"
+                                maxlength="6"
+                                placeholder="کد ۶ رقمی"
+                                autocomplete="one-time-code"
+                            >
+
+                            <span class="verification-status">
+                                ✓
+                            </span>
+
+                        </div>
+
+                        <small class="error-message"></small>
+
+                        <div class="code-meta">
+
+                            <small class="verification-hint" id="codeHint">
+                                کد به شماره <bdi id="codeMobile"></bdi> ارسال شد.
+                            </small>
+
+                            <span class="code-actions">
+
+                                <button type="button" class="link-button" id="editMobileButton">
+                                    ویرایش شماره
+                                </button>
+
+                                <button type="button" class="link-button" id="resendCodeButton" disabled>
+                                    ارسال مجدد
+                                </button>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            ایمیل
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                autocomplete="email"
+                            >
+
+                            <span class="input-state-icon"></span>
+
+                        </div>
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="button-row">
+
+                        <button
+                            type="button"
+                            class="back-button"
+                            data-back="1"
+                        >
+                            <span>→</span>
+                            بازگشت
+                        </button>
+
+                        <button
+                            type="button"
+                            class="primary-button next-button"
+                            data-next="3"
+                        >
+
+                            <span>
+                                ادامه
+                            </span>
+
+                            <span class="button-arrow">
+                                ←
+                            </span>
+
+                            <span class="button-shine"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     STEP 3
+                ========================== -->
+
+                <div
+                    class="form-step"
+                    data-form-step="3"
+                >
+
+                    <div class="step-heading">
+
+                        <span class="eyebrow">
+                            مرحله سوم
+                        </span>
+
+                        <h1>
+                            تکمیل ثبت‌نام
+                        </h1>
+
+                        <p>
+                            یک رمز عبور امن برای حساب قیزیلچی خودت انتخاب کن.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =========================
+                         PASSWORD
+                    ========================== -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            رمز عبور
+                        </label>
+
+                        <div class="input-wrapper password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="رمز عبور خود را وارد کنید"
+                                autocomplete="new-password"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="password"
+                                aria-label="نمایش رمز عبور"
+                                aria-pressed="false"
+                            >
+
+                                <svg
+                                    class="eye-icon"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <path
+                                        class="eye-outline"
+                                        d="M2.5 12C4.8 8.2 8.1 6 12 6s7.2 2.2 9.5 6C19.2 15.8 15.9 18 12 18S4.8 15.8 2.5 12Z"
+                                    />
+
+                                    <circle
+                                        class="eye-pupil"
+                                        cx="12"
+                                        cy="12"
+                                        r="3"
+                                    />
+
+                                    <circle
+                                        class="eye-highlight"
+                                        cx="13"
+                                        cy="11"
+                                        r=".8"
+                                    />
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="password-strength">
+
+                            <div class="strength-bar">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="strength-info">
+
+                                <small id="passwordHint" class="password-issues" aria-live="polite"></small>
+
+                                <small id="strengthPercent">
+                                    ۰٪
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <!-- =========================
+                         CONFIRM PASSWORD
+                    ========================== -->
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            تکرار رمز عبور
+                        </label>
+
+                        <div class="input-wrapper password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="رمز عبور را دوباره وارد کنید"
+                                autocomplete="new-password"
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="confirmPassword"
+                                aria-label="نمایش رمز عبور"
+                                aria-pressed="false"
+                            >
+
+                                <svg
+                                    class="eye-icon"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+
+                                    <path
+                                        class="eye-outline"
+                                        d="M2.5 12C4.8 8.2 8.1 6 12 6s7.2 2.2 9.5 6C19.2 15.8 15.9 18 12 18S4.8 15.8 2.5 12Z"
+                                    />
+
+                                    <circle
+                                        class="eye-pupil"
+                                        cx="12"
+                                        cy="12"
+                                        r="3"
+                                    />
+
+                                    <circle
+                                        class="eye-highlight"
+                                        cx="13"
+                                        cy="11"
+                                        r=".8"
+                                    />
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="button-row">
+
+                        <button
+                            type="button"
+                            class="back-button"
+                            data-back="2"
+                        >
+                            <span>→</span>
+                            بازگشت
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="primary-button submit-button"
+                        >
+
+                            <span>
+                                عضویت در قیزیلچی
+                            </span>
+
+                            <span class="button-arrow">
+                                ←
+                            </span>
+
+                            <span class="button-shine"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+
+            <!-- LOGIN VIEW: kept separate so the original sign-up form remains intact -->
+            <section class="login-view" id="loginView" aria-label="ورود به حساب کاربری" hidden>
+                <div class="login-panel-step active" data-login-step="credentials">
+                    <div class="step-heading">
+                        <span class="eyebrow">خوش برگشتی</span>
+                        <h1>ورود به حساب</h1>
+                        <p>برای ورود، شماره موبایل و رمز عبورت رو وارد کن.</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loginMobile">شماره موبایل</label>
+                        <div class="input-wrapper">
+                            <input type="tel" id="loginMobile" inputmode="numeric" maxlength="11"
+                                placeholder="مثلاً ۰۹۱۲۱۲۳۴۵۶۷" autocomplete="tel" dir="rtl">
+                            <span class="input-state-icon"></span>
+                        </div>
+                        <small class="error-message" id="loginMobileError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loginPassword">رمز عبور</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="loginPassword" placeholder="رمز عبور خود را وارد کنید"
+                                autocomplete="current-password">
+                            <span class="input-state-icon"></span>
+                        </div>
+                        <small class="error-message" id="loginPasswordError"></small>
+                    </div>
+
+                    <p class="login-note" id="loginCredentialNote" aria-live="polite"></p>
+                    <button type="button" class="primary-button login-next-button" id="loginContinue">
+                        <span>ادامه</span><span class="button-arrow">←</span><span class="button-shine"></span>
+                    </button>
+                </div>
+
+                <div class="login-panel-step" data-login-step="otp">
+                    <div class="step-heading">
+                        <span class="eyebrow">تأیید هویت</span>
+                        <h1>کد تأیید</h1>
+                        <p>کد شش‌رقمی ارسال‌شده به شماره موبایلت رو وارد کن.</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="loginOtp">کد تأیید</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="loginOtp" inputmode="numeric" maxlength="6"
+                                placeholder="کد ۶ رقمی" autocomplete="one-time-code" dir="ltr">
+                            <span class="input-state-icon"></span>
+                        </div>
+                        <small class="error-message" id="loginOtpError"></small>
+                    </div>
+                    <p class="login-note" id="loginOtpNote" aria-live="polite">
+                        ارسال پیامک در نسخه فعلی نمایشی است و پس از اتصال بک‌اند فعال می‌شود.
+                    </p>
+                    <div class="button-row login-actions">
+                        <button type="button" class="back-button" id="loginBack"><span>→</span> بازگشت</button>
+                        <button type="button" class="primary-button" id="loginVerify">
+                            <span>تأیید و ورود</span><span class="button-arrow">←</span><span class="button-shine"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-panel-step login-complete" data-login-step="complete">
+                    <div class="success-icon">✓</div>
+                    <span class="eyebrow">تأیید نمایشی</span>
+                    <h2>ورود با موفقیت تأیید شد</h2>
+                    <p>اتصال به پنل و هدایت به صفحه اصلی پس از مشخص‌شدن مسیر صفحه اصلی و اتصال بک‌اند فعال می‌شود.</p>
+                </div>
+            </section>
+
+            <!-- =========================
+                 SUCCESS STATE
+            ========================== -->
+
+            <div
+                class="success-state"
+                id="successState"
+            >
+
+                <div class="success-orbit"></div>
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <span class="eyebrow">
+                    تبریک!
+                </span>
+
+                <h2>
+                    الماس کامل شد
+                </h2>
+
+                <p>
+                    حساب کاربری شما با موفقیت ایجاد شد.
+                    به خانواده قیزیلچی خوش آمدید.
+                </p>
+
+                <button class="primary-button success-button">
+
+                    <span>
+                        ورود به حساب
+                    </span>
+
+                    <span class="button-arrow">
+                        ←
+                    </span>
+
+                    <span class="button-shine"></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script/script.js"></script>
+
+</body>
+</html>

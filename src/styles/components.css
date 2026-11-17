@@ -1,0 +1,10 @@
+/* Shared component layer: semantic styles stay in the original selectors for
+   pixel parity; this layer provides reusable Tailwind-aware primitives. */
+@layer components {
+  .ui-stack { @apply flex flex-col; }
+  .ui-button { font-family: inherit; cursor: pointer; }
+  .ui-field-control { width: 100%; outline: none; font-family: inherit; }
+  .ui-field-shell { @apply w-full; }
+  .ui-inline-center { @apply inline-flex items-center justify-center; }
+  .ui-surface { @apply rounded-xl border border-border bg-surface; }
+}
